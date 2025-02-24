@@ -13,7 +13,9 @@
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "This app needs your location to provide services.",
         "NSLocationAlwaysUsageDescription": "This app needs your location to provide services.",
-        "UIBackgroundModes": ["location"]
+        "UIBackgroundModes": [
+          "location"
+        ]
       }
     },
     "android": {
@@ -26,7 +28,8 @@
         "ACCESS_FINE_LOCATION",
         "FOREGROUND_SERVICE",
         "ACCESS_BACKGROUND_LOCATION"
-      ]
+      ],
+      "package": "com.yash8550.BackgroundLocationApp"
     },
     "web": {
       "bundler": "metro",
@@ -47,6 +50,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e1f65824-e114-47f2-a77b-a81801154e9b"
+      }
     }
   }
 }
